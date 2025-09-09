@@ -33,8 +33,7 @@ This portfolio is also a **practical project** to demonstrate my web development
 ---
 
 ## 🖼️ Screenshot
-![Hero Section](<img width="1901" height="913" alt="Screenshot 2025-09-09 230106" src="https://github.com/user-attachments/assets/f4b155dc-c5b7-4c35-a03b-d43b973e76bf" />
-)
+![Hero Section](portfolio-img.png)
 
 ---
 
