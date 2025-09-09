@@ -50,6 +50,3 @@ This portfolio is also a **practical project** to demonstrate my web development
 - Integrate **interactive elements** like smooth scrolling and contact forms  
 - Showcase projects, skills, and certifications effectively for professional purposes  
 
----
-
-> © 2025 Somesh Chaudhary — Built with ❤️ using HTML, CSS & JS
