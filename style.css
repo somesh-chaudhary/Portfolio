@@ -2,9 +2,27 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #F6F1E9;
-  color: #071533;
-  line-height: 1.6;
+  background-color: #000000; /* Changed to black for star background */
+  color: #FFFFFF;
+  line-height: 1.7;
+
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #FF9A00;
+}
+
+#bg-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: transparent; /* Ensure canvas background is transparent */
 }
 
 /* ===== HEADER ===== */
@@ -17,6 +35,8 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease, border-bottom 0.3s ease;
 }
 .logo {
   font-weight: 700;
@@ -48,21 +68,23 @@ header {
   gap: 2rem;
   padding: 3rem 2rem;
 }
-.hero-text { 
-  flex: 1; 
-  min-width: 280px; 
-  text-align: center; 
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
 }
 .hero-text h1 {
   margin-bottom: 0.5rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-decoration: underline;
   text-decoration-color: #FF9A00;
   text-decoration-thickness: 3px;
+  color: #FFFFFF;
 }
 .hero-text p { 
   margin-bottom: 1rem; 
-  font-size: 1.2rem; 
+  font-size: 1.3rem; 
+  color: #FFFFFF;
 }
 
 /* Resume button */
@@ -137,7 +159,7 @@ a.button:hover {
   max-width: 1000px; 
   margin: auto; 
   padding: 4rem 2rem; 
-  text-align: left; 
+  text-align: center; 
 }
 .grid { 
   display: flex; 
@@ -146,7 +168,7 @@ a.button:hover {
   justify-content: flex-start; 
 }
 .card {
-  background: #FFD93D33;
+  background: #A9A9A933;
   padding: 1rem;
   border-radius: 1rem;
   flex: 1 1 220px;
@@ -167,7 +189,7 @@ a.button:hover {
   font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
-  color: #071533;
+  color: #FFFFFF;
   transition: color 0.3s;
 }
 .cert-card .cert-title:hover {
@@ -177,7 +199,7 @@ a.button:hover {
 .cert-card .cert-bottom {
   margin-top: 0.3rem;
   font-size: 0.9rem;
-  color: #071533;
+  color: #FFFFFF;
 }
 .cert-logo {
   width: 60px;
@@ -193,7 +215,7 @@ form input, form textarea {
   border: 1px solid #FF9A00; 
   border-radius: 0.5rem; 
   background: #fff3; 
-  color: #071533; 
+  color: #FFFFFF; 
 }
 form button { 
   margin-top: 1rem; 
@@ -203,22 +225,61 @@ form button {
   background: linear-gradient(to right, #FFD93D, #FF9A00); 
   color: #071533; 
   font-weight: 600; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 2rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: white;
   background-color: black;
 }
 
 /* ===== RESPONSIVE ===== */
 @media(max-width: 768px) {
-  .hero { flex-direction: column; text-align: center; }
-  .grid { justify-content: center; }
-  .cert-card .cert-top { flex-direction: column; align-items: flex-start; }
+  body {
+    font-size: 1rem;
+  }
+  header {
+    padding: 0.8rem 1rem;
+  }
+  .logo {
+    font-size: 1.1rem;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+  }
+  .section-center {
+    padding: 2rem 1rem;
+  }
+  .grid {
+    justify-content: center;
+  }
+  .card {
+    flex: 1 1 100%; /* Make cards take full width on small screens */
+  }
+  .cert-card .cert-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   /* Hamburger menu active on small screens */
   .nav-right {
