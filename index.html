@@ -1,21 +1,13 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Somesh Chaudhary | Portfolio</title>
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FJCCB05MHK"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-FJCCB05MHK');
-  </script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <canvas id="bg-animation"></canvas>
   <header>
   <div class="logo">Somesh Chaudhary</div>
   
@@ -48,20 +40,21 @@
       <div class="hero-contact">
         <span class="contact-row">+916375644529 | somesh.cx@gmail.com</span>
         <span class="link-row">
-          <a href="https://www.linkedin.com/in/somesh-chaudhary-4b7b1027a/" target="_blank">
-            <img src="linkedin-icon.avif" alt="LinkedIn" class="contact-icon-small">
+          <a href="https://www.linkedin.com/in/somesh-chaudhary-4b7b1027a/" target="_blank" rel="noopener noreferrer">
+            <img src="linkedin-icon.avif" alt="LinkedIn" class="contact-icon-small" loading="lazy">
             Somesh Chaudhary
           </a> | 
-          <a href="https://github.com/somesh-chaudhary?tab=repositories" target="_blank">
-            <img src="github.png" alt="GitHub" class="contact-icon-small">
+          <a href="https://github.com/somesh-chaudhary/" target="_blank" rel="noopener noreferrer">
+            <img src="github.png" alt="GitHub" class="contact-icon-small" loading="lazy">
             Somesh - Chaudhary
           </a>
         </span>
       </div>
+
     </div>
 
     <div class="hero-image">
-      <img src="profile.jpg" alt="Somesh Profile" />
+      <img src="profile.jpg" alt="Somesh Profile" loading="lazy" />
     </div>
   </section>
 
@@ -92,7 +85,7 @@ I am passionate about learning, problem-solving, and applying my skills to inter
     <div class="grid">
       <div class="card">
         <b>AIML | Atria Institute of Technology (3rd-year)</b><br>
-        CGPA: 7.2 | 2023-2027
+        CGPA: 7.5 | 2023-2027
       </div>
       <div class="card">
         <b>XII (CBSE) | Kendriya Vidyalaya Banswara</b><br>
@@ -120,12 +113,19 @@ I am passionate about learning, problem-solving, and applying my skills to inter
     <h2>Projects</h2>
     <div class="grid">
       <div class="card">
-        <a href="https://github.com/somesh-chaudhary/DBMS-Movie-Ticket-Booking-System" target="_blank" class="project-title"><b>DBMS-Movie-Ticket-Booking-System</b></a>
+        <a href="https://github.com/somesh-chaudhary/DBMS-Movie-Ticket-Booking-System" target="_blank" rel="noopener noreferrer" class="project-title"><b>DBMS-Movie-Ticket-Booking-System</b></a>
         <p>A Python-based Movie Ticket Booking System using a database. Users can browse movies, select showtimes, book tickets, and manage reservations through a simple interface.</p>
+        <p class="project-tech"><b>Technologies:</b> Python, MySQL</p>
       </div>
       <div class="card">
-        <a href="https://github.com/somesh-chaudhary/Real-time-object-detection" target="_blank" class="project-title"><b>Real-time-object-detection</b></a>
+        <a href="https://github.com/somesh-chaudhary/Customer-Segmentation-using-Machine-Learning" target="_blank" rel="noopener noreferrer" class="project-title"><b>Customer Segmentation using Machine Learning</b></a>
+        <p>This project focuses on segmenting customers based on their purchasing behavior using various machine learning algorithms. The goal is to identify distinct customer groups for targeted marketing strategies.</p>
+        <p class="project-tech"><b>Technologies:</b> Python, Scikit-learn, Pandas, Matplotlib</p>
+      </div>
+      <div class="card">
+        <a href="https://github.com/somesh-chaudhary/Real-time-object-detection" target="_blank" rel="noopener noreferrer" class="project-title"><b>Real-time-object-detection</b></a>
         <p>Real-time object detection using MobileNet SSD and OpenCV. Captures webcam frames, detects objects, and displays results with bounding boxes and labels.</p>
+        <p class="project-tech"><b>Technologies:</b> MobileNet SSD, OpenCV</p>
       </div>
     </div>
   </section>
@@ -138,8 +138,8 @@ I am passionate about learning, problem-solving, and applying my skills to inter
     <!-- Certificate 1 -->
     <div class="card cert-card">
       <div class="cert-top">
-        <img src="insosys_logo.png" alt="Infosys Logo" class="cert-logo">
-        <a href="introduction to python.pdf" target="_blank" class="cert-title">Introduction to Python</a>
+        <img src="insosys_logo.png" alt="Infosys Logo" class="cert-logo" loading="lazy">
+        <a href="introduction to python.pdf" target="_blank" rel="noopener noreferrer" class="cert-title">Introduction to Python</a>
       </div>
       <div class="cert-bottom">Infosys | Jul 2024</div>
     </div>
@@ -147,8 +147,8 @@ I am passionate about learning, problem-solving, and applying my skills to inter
     <!-- Certificate 2 -->
     <div class="card cert-card">
       <div class="cert-top">
-        <img src="insosys_logo.png" alt="Infosys Logo" class="cert-logo">
-        <a href="Java Foundation Certification.pdf" target="_blank" class="cert-title">Java Foundation Certification</a>
+        <img src="insosys_logo.png" alt="Infosys Logo" class="cert-logo" loading="lazy">
+        <a href="Java Foundation Certification.pdf" target="_blank" rel="noopener noreferrer" class="cert-title">Java Foundation Certification</a>
       </div>
       <div class="cert-bottom">Infosys | Dec 2024</div>
     </div>
@@ -156,8 +156,8 @@ I am passionate about learning, problem-solving, and applying my skills to inter
     <!-- Certificate 3 -->
     <div class="card cert-card">
       <div class="cert-top">
-        <img src="insosys_logo.png" alt="Infosys Logo" class="cert-logo">
-        <a href="programming using java.pdf" target="_blank" class="cert-title">Programming using Java</a>
+        <img src="insosys_logo.png" alt="Infosys Logo" class="cert-logo" loading="lazy">
+        <a href="programming using java.pdf" target="_blank" rel="noopener noreferrer" class="cert-title">Programming using Java</a>
       </div>
       <div class="cert-bottom">Infosys | Dec 2024</div>
     </div>
@@ -165,8 +165,8 @@ I am passionate about learning, problem-solving, and applying my skills to inter
     <!-- Certificate 4 -->
     <div class="card cert-card">
       <div class="cert-top">
-        <img src="ibm_logo.png" alt="IBM Logo" class="cert-logo">
-        <a href="prompt.pdf" target="_blank" class="cert-title">Prompt Engineering for Everyone</a>
+        <img src="ibm_logo.png" alt="IBM Logo" class="cert-logo" loading="lazy">
+        <a href="prompt.pdf" target="_blank" rel="noopener noreferrer" class="cert-title">Prompt Engineering for Everyone</a>
       </div>
       <div class="cert-bottom">IBM | Aug 2025</div>
     </div>
@@ -174,8 +174,8 @@ I am passionate about learning, problem-solving, and applying my skills to inter
     <!-- Certificate 5 -->
     <div class="card cert-card">
       <div class="cert-top">
-        <img src="insosys_logo.png" alt="Infosys Logo" class="cert-logo">
-        <a href="python fundamentals.pdf" target="_blank" class="cert-title">Python Fundamentals</a>
+        <img src="insosys_logo.png" alt="Infosys Logo" class="cert-logo" loading="lazy">
+        <a href="python fundamentals.pdf" target="_blank" rel="noopener noreferrer" class="cert-title">Python Fundamentals</a>
       </div>
       <div class="cert-bottom">Infosys | Jul 2024</div>
     </div>
@@ -183,8 +183,8 @@ I am passionate about learning, problem-solving, and applying my skills to inter
     <!-- Certificate 6 -->
     <div class="card cert-card">
       <div class="cert-top">
-        <img src="ieee_logo.png" alt="IEEE Logo" class="cert-logo">
-        <a href="Somesh Chaudhary_Certificate of participation in Cryptic 2.0.pdf" target="_blank" class="cert-title">CRYPTIC 2.0 Hackathon Participation</a>
+        <img src="ieee_logo.png" alt="IEEE Logo" class="cert-logo" loading="lazy">
+        <a href="Somesh Chaudhary_Certificate of participation in Cryptic 2.0.pdf" target="_blank" rel="noopener noreferrer" class="cert-title">CRYPTIC 2.0 Hackathon Participation</a>
       </div>
       <div class="cert-bottom">IEEE AIT | Nov 2023</div>
     </div>
@@ -192,8 +192,8 @@ I am passionate about learning, problem-solving, and applying my skills to inter
     <!-- Certificate 7 -->
     <div class="card cert-card">
       <div class="cert-top">
-        <img src="MongoDB.png" alt="MongoDB Logo" class="cert-logo">
-        <a href="MongoDB.pdf" target="_blank" class="cert-title">MongoDB Basics</a>
+        <img src="MongoDB.png" alt="MongoDB Logo" class="cert-logo" loading="lazy">
+        <a href="MongoDB.pdf" target="_blank" rel="noopener noreferrer" class="cert-title">MongoDB Basics</a>
       </div>
       <div class="cert-bottom">MongoDB | Nov 2025</div>
     </div>
@@ -201,8 +201,8 @@ I am passionate about learning, problem-solving, and applying my skills to inter
     <!-- Certificate 8 -->
     <div class="card cert-card">
       <div class="cert-top">
-        <img src="iitb_logo.jpeg" alt="IITB Logo" class="cert-logo">
-        <a href="SQL_PHP.pdf" target="_blank" class="cert-title">PHP & MySQL Training</a>
+        <img src="iitb_logo.jpeg" alt="IITB Logo" class="cert-logo" loading="lazy">
+        <a href="SQL_PHP.pdf" target="_blank" rel="noopener noreferrer" class="cert-title">PHP & MySQL Training</a>
       </div>
       <div class="cert-bottom">IIT Bombay | May 2025</div>
     </div>
@@ -210,8 +210,8 @@ I am passionate about learning, problem-solving, and applying my skills to inter
     <!-- Certificate 9 -->
     <div class="card cert-card">
       <div class="cert-top">
-        <img src="aws_logo.jpg" alt="AWS Logo" class="cert-logo">
-        <a href="AWS Training & Certification.pdf" target="_blank" class="cert-title">Foundations of Prompt Engineering</a>
+        <img src="aws_logo.jpg" alt="AWS Logo" class="cert-logo" loading="lazy">
+        <a href="AWS Training & Certification.pdf" target="_blank" rel="noopener noreferrer" class="cert-title">Foundations of Prompt Engineering</a>
       </div>
       <div class="cert-bottom">AWS | Aug 2025</div>
     </div>
@@ -219,8 +219,8 @@ I am passionate about learning, problem-solving, and applying my skills to inter
     <!-- Certificate 10 -->
     <div class="card cert-card">
       <div class="cert-top">
-        <img src="aws_logo.jpg" alt="AWS Logo" class="cert-logo">
-        <a href="generative_ai_aws.pdf" target="_blank" class="cert-title">Generative AI with Diffusion Models</a>
+        <img src="aws_logo.jpg" alt="AWS Logo" class="cert-logo" loading="lazy">
+        <a href="generative_ai_aws.pdf" target="_blank" rel="noopener noreferrer" class="cert-title">Generative AI with Diffusion Models</a>
       </div>
       <div class="cert-bottom">AWS | Aug 2025</div>
     </div>
@@ -251,27 +251,6 @@ I am passionate about learning, problem-solving, and applying my skills to inter
   <footer>
     © <script>document.write(new Date().getFullYear())</script> Somesh Chaudhary — Built with HTML, CSS, JS.
   </footer>
-   <script>
-    function toggleMenu() {
-      document.getElementById("navMenu").classList.toggle("show");
-    }
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e){
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-        document.getElementById("navMenu").classList.remove("show");
-      });
-    });
-
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => { 
-        if(entry.isIntersecting) entry.target.classList.add('visible'); 
-      });
-    }, { threshold: 0.1 });
-    sections.forEach(section => observer.observe(section));
-  </script>
+   <script src="script.js"></script>
 </body>
-
 </html>
